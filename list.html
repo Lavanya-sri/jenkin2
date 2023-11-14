@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>paragraph page</title>
+</head>
+<body>
+<p> this is an example paragraph </p>
+</body>
+</html>
+
+
+s=input()
+x=s.count("1")
+y=s.count("0")
+st=""
+for i in s:
+    if(i=="1"):
+        st+=i
+    else:
+        st+='1'
+print(st)
+x=int(st,2)
+print(x)
+l=[]
+for i in range(1,x+1):
+    if(i%2!=0):
+        l.append(i)
+print(l)
+for i in l:
+    a=(bin(i).replace("ob"," "))
+    print(a)
